@@ -399,6 +399,14 @@ class CAR(Platforms):
     CarSpecs(mass=4905. * CV.LB_TO_KG, wheelbase=3.125, steerRatio=15.0, tireStiffnessFactor=0.444),
     dbc_dict('toyota_nodsu_pt_generated', 'toyota_adas'),
   )
+  TOYOTA_CROWN = ToyotaTSS2PlatformConfig(
+    [
+      ToyotaCarDocs("Toyota Crown Hybrid 2021"),
+    ],
+    CarSpecs(mass=4122.644. * CV.LB_TO_KG, wheelbase=2.920, steerRatio=13, tireStiffnessFactor=0.5),
+    dbc_dict('toyota_nodsu_pt_generated', 'toyota_adas'),
+    flags=ToyotaFlags.NO_DSU,
+  )
 
 
 def get_platform_codes(fw_versions: list[bytes]) -> dict[bytes, set[bytes]]:
