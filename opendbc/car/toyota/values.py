@@ -400,10 +400,8 @@ class CAR(Platforms):
     dbc_dict('toyota_nodsu_pt_generated', 'toyota_adas'),
   )
   TOYOTA_CROWN = ToyotaTSS2PlatformConfig(
-    [
-      ToyotaCarDocs("Toyota Crown Hybrid 2021"),
-    ],
-    CarSpecs(mass=4122.644. * CV.LB_TO_KG, wheelbase=2.920, steerRatio=13, tireStiffnessFactor=0.5),
+    [ToyotaCarDocs("Toyota Crown Hybrid 2021")],
+    CarSpecs(mass=4123. * CV.LB_TO_KG, wheelbase=2.920, steerRatio=13.0, tireStiffnessFactor=0.5),
     dbc_dict('toyota_nodsu_pt_generated', 'toyota_adas'),
     flags=ToyotaFlags.NO_DSU,
   )
